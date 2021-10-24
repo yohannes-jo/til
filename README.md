@@ -1,2 +1,2 @@
 # til
-journal written using django
+>web-app/journal written within the django framework
