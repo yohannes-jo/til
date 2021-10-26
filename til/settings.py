@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'feed',
     'profiles',
+    'sorl.thumbnail'
 ]
 
 MIDDLEWARE = [
@@ -60,6 +61,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'til.urls'
 
 TEMPLATE_DIR = os.path.join(PROJECT_DIR, 'templates/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_URL = '/media/'
 
 TEMPLATES = [
     {
