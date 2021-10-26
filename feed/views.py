@@ -1,4 +1,4 @@
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .models import Post
 
 class HomePage(ListView):
@@ -7,3 +7,9 @@ class HomePage(ListView):
     model = Post
     template_name = "feed/homepage.html"
     context_object_name = "posts"
+                        
+class PostDetail(DetailView):
+    model = Post
+    context_object_name = "post"
+    template_name = "feed/detail.html"
+    http_method_names = ["get"]
