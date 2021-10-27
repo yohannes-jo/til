@@ -4,7 +4,9 @@
 {% block title %}Today I Learned{% endblock %}
 
 {% block body %}
-    {% for post in posts %}
-        {% include 'includes/post.html' with post=post show_detail_view=True %}   
-    {% endfor %}
+    <div id="posts-container">
+        {% for post in posts %}
+            {% include 'includes/post.html' with post=post show_detail_view=True %}   
+        {% endfor %}
+    </div>
 {% endblock %}
