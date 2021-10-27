@@ -2,7 +2,7 @@ from django.views.generic import DetailView
 from django.contrib.auth.models import User
 
 class ProfileDetail(DetailView):
-    http_method_names = ['get'],
+    http_method_names = ['get']
     template_name = 'profiles/detail.html'
     model = User
     context_object_name = 'user'

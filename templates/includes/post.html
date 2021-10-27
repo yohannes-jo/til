@@ -15,7 +15,6 @@
         {% else %}
             <span></span>
         {% endif %}
-        {# TODO: add a detail url #}
         <div>
             <a class="flex items-center" href="{% url 'profiles:detail' post.author.username %}">
                 {% thumbnail post.author.profile.image '373x373' crop='center' as im %}
