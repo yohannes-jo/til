@@ -1,10 +1,10 @@
 from django.urls import path
-from .views import HomePage, PostDetail, CreateNewPost
+from . import views
 
 app_name = 'feed'
 
 urlpatterns = [
-    path('', HomePage.as_view(), name="index"),
-    path('<int:pk>/', PostDetail.as_view(), name="detail"),
-    path('new', CreateNewPost.as_view(), name="new_post"),
+    path('', views.HomePage.as_view(), name="index"),
+    path('<int:pk>/', views.PostDetail.as_view(), name="detail"),
+    path('new', views.CreateNewPost.as_view(), name="new_post"),
 ]
