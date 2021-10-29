@@ -3,6 +3,6 @@
 >unable to edit your account from within the app for now, but accesible through the admin directory
 
 **Package Requirements**
->Django
->django-allauth
->sorl-thumbnail
+- Django
+- django-allauth
+- sorl-thumbnail
