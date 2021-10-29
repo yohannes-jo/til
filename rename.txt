@@ -1,0 +1,3 @@
+TODO: adding a counter - done
+TODO: add a way to edit your profile?
+TODO: make page prettier
